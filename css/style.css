@@ -3,7 +3,7 @@ body {
   color: #040000;
   background-color: #ffffff;
 }
-
+/* #007bff */
 .layout_padding {
   padding: 90px 0;
 }
@@ -391,7 +391,7 @@ background-color: transparent;
     text-decoration: none;
     position: centre;
       font-size: 20px;
-    color: #341bca;
+    color: #fd7e14;
     padding: 10px 0.2px;
     transition: 0.7s ease;
     display: flex;
@@ -399,8 +399,9 @@ background-color: transparent;
 
 .main-board h1:hover {
   text-align: center;
-        font-size: 30px;
-        color: #341bca;
+  animation-duration: 50ms;
+      font-size: 30px;
+      color: #341bca;
 }
 
 /* Style all font awesome icons */
@@ -409,7 +410,7 @@ background-color: transparent;
   font-size: 15px;
   width: 40px;
   text-align: center;
-  text-decoration: none;0
+  text-decoration: none;
   float: centre;
   position: right;
   margin-top: 40px;
@@ -418,10 +419,19 @@ background-color: transparent;
 /* Add a hover effect if you want */
 .about_section .fa:hover {
   opacity: 1;
+  border-radius: 10px 100px / 120px;
 }
 
 /* Set a specific color for each brand */
 
+.about_section .fa-reddit:hover {
+  background:   #ff4500;
+  color: white;
+}
+.about_section .fa-github:hover {
+  background:   #171515;
+  color: white;
+}
 .about_section .fa-facebook:hover {
   background:   #3b5998;
   color: white;
