@@ -835,3 +835,79 @@ background-color: transparent;
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*Timeline */
+
+.timeline-event h3 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.timeline-event p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.timeline-section {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.timeline-events {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-event {
+  position: relative;
+  width: 150px;
+}
+
+.timeline-event h3, .timeline-event p {
+  position: absolute;
+  text-align: center;
+}
+
+.timeline-event h3 {
+  top: -50px;
+  left: -25px;
+}
+
+.timeline-event p {
+  top: -25px;
+  left: -25px;
+}
+
+/* Add this code to create the line and the dots */
+
+.timeline-section::before {
+  /* Create a horizontal line */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.timeline-event::before {
+  /* Create a circular dot */
+  content: "";
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
